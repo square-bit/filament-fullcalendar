@@ -1,8 +1,8 @@
 {
-    "name": "square-bit/filament-fullcalendar",
+    "name": "saade/filament-fullcalendar",
     "description": "The Most Popular JavaScript Calendar integrated with Filament 💛",
     "keywords": [
-        "square-bit",
+        "saade",
         "laravel",
         "filament-fullcalendar"
     ],
@@ -10,9 +10,9 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "square-bit",
-            "email": "info@square-bit.com",
-            "homepage": "www.square-bit.com"
+            "name": "Saade",
+            "email": "saade@outlook.com.br",
+            "role": "Developer"
         }
     ],
      "require": {
@@ -35,12 +35,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Squarebit\\FilamentFullCalendar\\": "src"
+            "Saade\\FilamentFullCalendar\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Squarebit\\FilamentFullCalendar\\Tests\\": "tests"
+            "Saade\\FilamentFullCalendar\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -58,10 +58,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Squarebit\\FilamentFullCalendar\\FilamentFullCalendarServiceProvider"
+                "Saade\\FilamentFullCalendar\\FilamentFullCalendarServiceProvider"
             ],
             "aliases": {
-                "FilamentFullCalendar": "Squarebit\\FilamentFullCalendar\\Facades\\FilamentFullCalendar"
+                "FilamentFullCalendar": "Saade\\FilamentFullCalendar\\Facades\\FilamentFullCalendar"
             }
         }
     },
