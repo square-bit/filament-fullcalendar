@@ -46,7 +46,7 @@ trait CanManageEvents
 
     public function onEventClick($event): void
     {
-        if (! static::canView($event)) {
+        if (!static::canView($event)) {
             return;
         }
 
@@ -58,7 +58,7 @@ trait CanManageEvents
         }
 
         $this->editEventForm
-            ->disabled(! static::canEdit($event))
+            ->disabled(!static::canEdit($event))
             ->fill($this->event?->getAttributes() ?? $event);
 
         $this->dispatchBrowserEvent('open-modal', ['id' => 'fullcalendar--edit-event-modal']);
@@ -66,7 +66,7 @@ trait CanManageEvents
 
     public function onCreateEventClick(array $date): void
     {
-        if (! static::canCreate()) {
+        if (!static::canCreate()) {
             return;
         }
 
@@ -80,7 +80,7 @@ trait CanManageEvents
     protected function handleCreateEventClickUsing(): Closure
     {
         return function ($date, FullCalendarWidget $calendar) {
-            $timezone = $this->config('timeZone') !== ' local'
+            $timezone = $this->config('timeZone') !== 'local'
                 ? $this->config('timeZone', config('app.timezone'))
                 : config('app.timezone');
 
