@@ -52,7 +52,6 @@ trait CanManageEvents
 
         if (method_exists($this, 'resolveEventRecord')) {
             $this->event = $this->resolveEventRecord($event);
-            $this->editEventForm->model($this->event);
         } else {
             $this->event_id = $event['id'] ?? null;
         }
