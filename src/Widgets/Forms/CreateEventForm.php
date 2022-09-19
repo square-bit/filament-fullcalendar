@@ -36,6 +36,7 @@ trait CreateEventForm
     {
         return [
             'createEventForm' => $this->makeForm()
+                ->model($this->getFormModel())
                 ->schema(static::getCreateEventFormSchema())
                 ->statePath('createEventFormState'),
         ];
